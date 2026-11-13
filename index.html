@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Himanshu Information</title>
+<meta name="description" content="Explore education, government jobs, technology, science, news and agriculture information.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f4f8ff;color:#18304b}
+header{background:#0755ad;color:white;padding:24px 7%;text-align:center}
+header h1{font-size:32px;letter-spacing:1px}
+header p{margin-top:8px;color:#d9eaff}
+nav{background:#063c7b;padding:14px;text-align:center;position:sticky;top:0;z-index:5}
+nav a{color:white;text-decoration:none;margin:8px 12px;font-size:14px}
+nav a:hover{text-decoration:underline}
+.hero{padding:65px 20px;text-align:center;background:linear-gradient(120deg,#0875dc,#063c91);color:white}
+.hero h2{font-size:34px;margin-bottom:14px}
+.hero p{font-size:17px;margin-bottom:25px}
+.search{width:min(500px,90%);padding:14px;border:0;border-radius:8px;font-size:16px}
+main{max-width:1150px;margin:auto;padding:35px 20px}
+.heading{text-align:center;margin:10px 0 25px;color:#0755ad}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:white;padding:24px;border-radius:12px;box-shadow:0 3px 14px #173c7015;border:1px solid #e0ebfa}
+.card .emoji{font-size:32px}
+.card h3{color:#0755ad;margin:12px 0}
+.card p{line-height:1.6;color:#536579;font-size:14px}
+.card a{display:inline-block;margin-top:15px;color:#0875dc;font-weight:bold;text-decoration:none}
+.card a:hover{text-decoration:underline}
+section{margin-bottom:45px;scroll-margin-top:75px}
+.about{background:white;padding:28px;border-radius:12px;line-height:1.8}
+footer{background:#063c7b;color:white;text-align:center;padding:28px 15px;line-height:2}
+footer a{color:#cce5ff}
+#noResults{text-align:center;padding:20px;display:none;color:#777}
+@media(max-width:650px){
+ header h1{font-size:25px}
+ nav a{display:inline-block;margin:7px}
+ .hero h2{font-size:27px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>HIMANSHU INFORMATION</h1>
+<p>Your One-Stop Information Platform</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#education">Education</a>
+<a href="#jobs">Jobs</a>
+<a href="#technology">Technology</a>
+<a href="#science">Science</a>
+<a href="#news">News</a>
+<a href="#agriculture">Agriculture</a>
+<a href="#about">About</a>
+</nav>
+
+<div class="hero" id="home">
+<h2>Welcome to Himanshu Information</h2>
+<p>Learn Something New Every Day!</p>
+<input class="search" id="search" type="search"
+placeholder="Search information..." aria-label="Search information">
+</div>
+
+<main>
+<h2 class="heading">Explore Our Information Sections</h2>
+
+<div class="grid" id="cards">
+
+<section class="card" id="education">
+<div class="emoji">📚</div>
+<h3>Education & Study Materials</h3>
+<p>Explore school subjects, study resources, learning tips and educational information.</p>
+<a href="https://ncert.nic.in/" target="_blank" rel="noopener">Explore NCERT →</a>
+</section>
+
+<section class="card" id="jobs">
+<div class="emoji">🏛️</div>
+<h3>Government Jobs & Results</h3>
+<p>Find official recruitment notifications, examination information and result portals.</p>
+<a href="https://upsc.gov.in/" target="_blank" rel="noopener">UPSC Official Website →</a>
+<br>
+<a href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC Official Website →</a>
+</section>
+
+<section class="card" id="technology">
+<div class="emoji">💻</div>
+<h3>Technology & AI</h3>
+<p>Discover computers, artificial intelligence, digital tools and technology learning.</p>
+<a href="https://www.ibm.com/think/topics/artificial-intelligence" target="_blank" rel="noopener">Learn About AI →</a>
+</section>
+
+<section class="card" id="science">
+<div class="emoji">🔬</div>
+<h3>Science & General Knowledge</h3>
+<p>Discover science facts, space, inventions, discoveries and general knowledge.</p>
+<a href="https://www.isro.gov.in/" target="_blank" rel="noopener">Explore ISRO →</a>
+</section>
+
+<section class="card" id="news">
+<div class="emoji">📰</div>
+<h3>News & Current Affairs</h3>
+<p>Explore official government updates, important announcements and current affairs.</p>
+<a href="https://pib.gov.in/" target="_blank" rel="noopener">Press Information Bureau →</a>
+</section>
+
+<section class="card" id="agriculture">
+<div class="emoji">🌾</div>
+<h3>Agriculture Information</h3>
+<p>Learn about farming, crops, soil, agricultural science and modern farming methods.</p>
+<a href="https://icar.org.in/" target="_blank" rel="noopener">Explore ICAR →</a>
+</section>
+
+</div>
+
+<p id="noResults">No matching section found. Try another search.</p>
+
+<section id="about">
+<h2 class="heading">About Us</h2>
+<div class="about">
+<p><strong>Welcome to Himanshu Information!</strong></p>
+<p>Himanshu Information is an educational and informational platform created to make useful knowledge easier to explore.</p>
+<p>Our aim is to share information about education, government opportunities, technology, science, news and agriculture in one place.</p>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="heading">Contact Us</h2>
+<div class="about">
+<p>Have a question or suggestion? We would love to hear from you.</p>
+<p>Email: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
+<p><small>Replace this sample email with an email address you are comfortable publishing.</small></p>
+</div>
+</section>
+
+</main>
+
+<footer>
+<h3>HIMANSHU INFORMATION</h3>
+<p>Learn • Explore • Discover</p>
+<p>© 2026 Himanshu Information. All rights reserved.</p>
+<p><a href="#home">Back to top ↑</a></p>
+</footer>
+
+<script>
+const search = document.getElementById("search");
+const cards = document.querySelectorAll("#cards .card");
+const noResults = document.getElementById("noResults");
+
+search.addEventListener("input", function(){
+ const term = this.value.toLowerCase().trim();
+ let visible = 0;
+
+ cards.forEach(card => {
+   const match = card.innerText.toLowerCase().includes(term);
+   card.style.display = match ? "" : "none";
+   if(match) visible++;
+ });
+
+ noResults.style.display = visible ? "none" : "block";
+});
+</script>
+
+</body>
+</html>
